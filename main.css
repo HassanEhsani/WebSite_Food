@@ -14,11 +14,11 @@ body {
 
 .hero-bg {
   background: #307d99 url("../imges/bg.jpg");
-  background-position: 50% 83%;
+  background-position: 12% 83%;
   color: white;
   text-align: center;
   padding-bottom: 4em;
-  width: 100%;
+  /* width: 100%; */
 }
 header {
   padding: 1em 0;
@@ -139,7 +139,41 @@ p {
   section {
     margin: 0 4em;
   }
-  .form-container{
-      margin: 2em -4em 0;
+  .form-container {
+    margin: 2em -4em 0;
+  }
+}
+@media (min-width: 930px) {
+  .hero-bg {
+    text-align: left;
+  }
+  .hero-bg p {
+    margin: 0 0 3em;
+  }
+  .hero-bg section {
+    width: 65%;
+  }
+  .form-container {
+    margin: 2em 0 0;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  form {
+    display: flex;
+  }
+  .form-left {
+    width: 70%;
+  }
+  label {
+    margin: 0;
+  }
+  input[type="button"]{
+      height: fit-content;
+      font-size: 1.1em;
+      margin-left: 1em;
+      margin-top: 2.0em;
+      padding: .7em 0;
+      width: 30%;
   }
 }
